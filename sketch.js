@@ -77,18 +77,18 @@ function drawSkeleton () {
   if (partB.score > 0.1) {
   image (dinosaurImg, posX, partB. y-25,50,50) 
   partA = pose. keypoints [2];
-  if (partB.score > 0.1) {
+  if (partA.score > 0.1) {
     push();
     textSize(40);
     text("412730748 陳玟慈", partA.x-50,partA.y-100);
     pop();
   }
   if (partC.score > 0.1) {
-  image(dinosaurImg, partC.x, partC.y, 50, 50);
+  image(dinosaurImg, posX, partC.y, 50, 50);
   }
   // Draw the GIF at the right wrist if the score is hi
   if (partD. score > 0.1) {
-  image (dinosaurImg, partD.x, partD.y, 50, 50);
+  image (dinosaurImg, posX, partD.y, 50, 50);
 }
   }
 }
