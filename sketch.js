@@ -72,10 +72,10 @@ function drawSkeleton () {
     let negPosX = width - ((frameCount * speed) % width);
   //line(partA.x, partA.y, partB.x, partB.y);
   if (partA. score > 0.1) {
-  image(dinosaurImg,posX, partA. y-25,50,50)
+  image(dinosaurImg,negPosX, partA. y-25,50,50)
   }
   if (partB.score > 0.1) {
-  image (dinosaurImg, posX, partB. y-25,50,50) 
+  image (dinosaurImg, negPosX, partB. y-25,50,50) 
   partA = pose. keypoints [2];
   if (partA.score > 0.1) {
     push();
@@ -84,11 +84,11 @@ function drawSkeleton () {
     pop();
   }
   if (partC.score > 0.1) {
-  image(dinosaurImg, posX, partC.y, 50, 50);
+  image(dinosaurImg, negPosX, partC.y, 50, 50);
   }
   // Draw the GIF at the right wrist if the score is hi
   if (partD. score > 0.1) {
-  image (dinosaurImg, posX, partD.y, 50, 50);
+  image (dinosaurImg, negPosX, partD.y, 50, 50);
 }
   }
 }
@@ -112,3 +112,4 @@ function drawSkeleton () {
   15 left foot
   16 right foot
 */
+
