@@ -84,11 +84,11 @@ function drawSkeleton () {
     pop();
   }
   if (partC.score > 0.1) {
-  image(dinosaurImg, partC.x, partC.y, 50, 50);
+  image(dinosaurImg, posX, partC.y, 50, 50);
   }
   // Draw the GIF at the right wrist if the score is hi
   if (partD. score > 0.1) {
-  image (dinosaurImg, partD.x, partD.y, 50, 50);
+  image (dinosaurImg, posX, partD.y, 50, 50);
 }
   }
 }
